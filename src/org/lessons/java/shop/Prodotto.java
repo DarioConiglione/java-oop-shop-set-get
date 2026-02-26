@@ -10,7 +10,7 @@ public class Prodotto {
     private double prezzo;
     private int iva;
 
-    public Prodotto(String name, String marca, int prezzo, int iva) {
+    public Prodotto(String name, String marca, double prezzo, int iva) {
 
         Random rand = new Random();
         this.codice = rand.nextInt(1000);
