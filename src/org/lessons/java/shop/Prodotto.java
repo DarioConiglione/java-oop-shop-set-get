@@ -64,4 +64,8 @@ public class Prodotto {
                 + getPrezzo() + " / Iva: " + getIva();
     }
 
+    public double calcolaPrezzoFinale() {
+        return prezzo + (prezzo * 0.22) - (prezzo * 0.02);
+    }
+
 }

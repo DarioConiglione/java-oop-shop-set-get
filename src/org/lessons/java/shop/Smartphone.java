@@ -2,8 +2,8 @@ package org.lessons.java.shop;
 
 public class Smartphone extends Prodotto {
 
-    private String imei;
-    private int ram;
+    String imei;
+    int ram;
 
     public Smartphone(String name, String marca, double prezzo, int iva, String imei, int ram) {
 
@@ -13,8 +13,17 @@ public class Smartphone extends Prodotto {
 
     }
 
+    @Override
     public String toString() {
         return super.toString() + " / Codice IMEI: " + imei + " / RAM: " + ram;
+    }
+
+    @Override
+    public double calcolaPrezzoFinale() {
+        if (ram < 32) {
+            return prezzo + (prezzo * 0.22) - (prezzo * 0.05);
+        }
+        return super.calcolaPrezzoFinale();
     }
 
 }
