@@ -4,11 +4,11 @@ import java.util.Random;
 
 public class Prodotto {
 
-    private int codice;
-    private String name;
-    private String marca;
-    private double prezzo;
-    private int iva;
+    protected int codice;
+    protected String name;
+    protected String marca;
+    protected double prezzo;
+    protected int iva;
 
     public Prodotto(String name, String marca, double prezzo, int iva) {
 
