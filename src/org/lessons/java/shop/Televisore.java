@@ -10,4 +10,7 @@ public class Televisore extends Prodotto {
         this.isSmart = true;
     }
 
+    public String toString() {
+        return super.toString() + " / Pollici: " + pollici + " / Smart-TV: " + isSmart;
+    }
 }

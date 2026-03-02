@@ -13,4 +13,8 @@ public class Smartphone extends Prodotto {
 
     }
 
+    public String toString() {
+        return super.toString() + " / Codice IMEI: " + imei + " / RAM: " + ram;
+    }
+
 }

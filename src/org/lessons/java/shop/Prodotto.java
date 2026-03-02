@@ -58,4 +58,10 @@ public class Prodotto {
         return this.iva;
     }
 
+    @Override
+    public String toString() {
+        return "Codice: " + getCodice() + " / Nome: " + getName() + " / Marca: " + getMarca() + " / Prezzo: "
+                + getPrezzo() + " / Iva: " + getIva();
+    }
+
 }
